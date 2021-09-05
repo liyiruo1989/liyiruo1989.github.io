@@ -25,11 +25,12 @@
   //要输出的内容
   var str = "爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội 爱 Bội Bội";
   var new_str = str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str + str ;
- 
+  new_str = new_str + new_str + new_str + new_str;
+ new_str = new_str + new_str + new_str + new_str;
  var pos=0;
   //利用递归和setTimeout()实现文字输出
   function printer(){
-    text.value=str.substring(0,pos)+"|";
+    text.value=new_str.substring(0,pos)+"|";
     //判断是否到达结尾.如果是则一秒后再来一遍.
     if(pos++>new_str.length){
       pos=0;
